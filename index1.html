@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Farmer Digital Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌾 Smart Farmer Digital Assistant</h1>
+
+    <div class="form-box">
+        <label>Soil Type:</label>
+        <select id="soil">
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="alluvial">Alluvial</option>
+        </select>
+
+        <label>Season:</label>
+        <select id="season">
+            <option value="kharif">Kharif</option>
+            <option value="rabi">Rabi</option>
+        </select>
+
+        <button onclick="recommendCrop()">Get Recommendation</button>
+    </div>
+
+    <div class="result-box">
+        <h2 id="result"></h2>
+        <p id="tips"></p>
+        <p id="fertilizer"></p>
+    </div>
+
+    <div class="weather-box">
+        <h3>🌤 Weather Suggestion</h3>
+        <p id="weather"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
